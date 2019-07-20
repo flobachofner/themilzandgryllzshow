@@ -1,0 +1,28 @@
+#intro {
+	background-image: url("../img/jumbotron.jpg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	position: relative;
+	height: 400px;
+}
+
+.page-footer {
+	background-color: #444 !important;
+}
+
+.footer-copyright {
+	background-color: #222 !important;
+}
+
+.feedContent {
+	margin: 40px;
+}
+
+.socials {
+	color: #777;
+}
+
+.socials:hover {
+	color: #444;
+}
