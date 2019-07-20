@@ -113,34 +113,34 @@
           <!--Section heading-->
           <h2 class="display-2 text-center mb-5 mt-3">The Milz and Gryllz Show &#127348;</h2>
 			
-			<form action="mail.php" method="POST">
-<p>Name</p> <input type="text" name="name">
-<p>Email</p> <input type="text" name="email">
-<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
-<input type="submit" value="Send"><input type="reset" value="Clear">
+			<form method="post" name="myemailform" action="form-to-email.php">
+	<p>
+		<label for="name">Enter Name: </label><br>
+		<input type="text" name="name">
+	</p>
+	<p>
+		<label for="email">Enter Email Address:</label><br>
+		<input type="text" name="email">
+	</p>
+	<p>
+		<label for="message">Enter Message:</label> <br>
+		<textarea name="message"></textarea>
+	</p>
+	<input type="submit" name="submit" value="submit">
 </form>
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("myemailform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
           <!--Section description-->
           <p class="text-center mb-5">just a couple of average blokes on different sides of the planet having a chat</p>
         </div>
         <!-- Heading & Description -->
-		  
-		  <form name="form1" method="post">
-			<textarea name="value1"></textarea>
-			<input type="submit" value="submit" name="submit" />
-			</form>
-		  
-		  <?php
-if(isset($_POST['submit']))
-{
-	$to= "chef_fb@hotmail.com";
-	$subject= "Subject for your email";
-	$msg= $_POST["value1"]; //textarea value will be send as message here.
-	$header= "Header for mail" //For example: From: abc@xyz.com
-	mail($to,$subject,$msg,$header);
-}
-?>
-		  
-		  
 		  
 		  
 		<div class="col-xs-12" style="height:100px;"></div>
