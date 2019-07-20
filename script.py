@@ -12,3 +12,4 @@ soup = BeautifulSoup(webpage, "html.parser")
 print(soup.select("#home_visitor_stat")[0].get_text())
 
 #python ~/Documents/6_Webdesign/09_Dreamweaver/themilzandgryllzshow
+# cd Documents/6_Webdesign/09_Dreamweaver/themilzandgryllzshow
