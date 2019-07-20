@@ -2,16 +2,6 @@
 <html lang="en">
 
 <head>
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-41313155-7"></script>
-		<script>
-  			window.dataLayer = window.dataLayer || [];
-  			function gtag(){dataLayer.push(arguments);}
-  			gtag('js', new Date());
-
-  			gtag('config', 'UA-41313155-7');
-		</script>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -127,7 +117,24 @@
         </div>
         <!-- Heading & Description -->
 		  
-		
+		  <form name="form1" method="post">
+			<textarea name="value1"></textarea>
+			<input type="submit" value="submit" name="submit" />
+			</form>
+		  
+		  <?php
+if(isset($_POST['submit']))
+{
+	$to= "chef_fb@hotmail.com";
+	$subject= "Subject for your email";
+	$msg= $_POST["value1"]; //textarea value will be send as message here.
+	$header= "Header for mail" //For example: From: abc@xyz.com
+	mail($to,$subject,$msg,$header);
+}
+?>
+		  
+		  
+		  
 		  
 		<div class="col-xs-12" style="height:100px;"></div>
 		
