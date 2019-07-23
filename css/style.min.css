@@ -26,18 +26,30 @@
 .socials:hover {
 	color: #444;
 }
-	
+		
 
 @media (min-width: 576px) {
     .card-columnz {
         column-count: 2 !important;
+		
     }
+	#kev {
+		position: absolute;
+	  	top: 314px;
+  	  	right: -139px;
+	}
 }
 
 @media (min-width: 768px) {
     .card-columnz {
         column-count: 2 !important;
+		
     }
+	#kev {
+		position: absolute;
+	  	top: 283px;
+  	  	right: -139px;
+	}
 }
 
 @media (min-width: 992px) {
