@@ -152,6 +152,38 @@
         </div>
         <!-- Heading & Description -->
 		  
+		  
+		  
+
+<!-- Card -->
+<div class="card overlay card col-lg-6 col-md-8 offset-md-2 offset-lg-3">
+
+  <!-- Card image -->
+  <div class="view overlay my-3 gradient-card-header blue-gradient text-center text-white">
+
+    <!-- Title -->
+    <h2 class="card-header-title my-3 display-1">
+	  <div class="counter" data-count="689">600</div>
+	  </h2>
+    <!-- Subtitle -->
+    <p class="card-header-subtitle mb-3">current downloads</p>
+
+  </div>
+
+  <!-- Card content --
+  <div class="card-body card-body-cascade text-center">
+
+    <!-- Text --
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus non quos laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+
+    <hr>
+  </div>-->
+
+</div>
+<!-- Card -->
+		  
+<div class="col-xs-12" style="height:50px;"></div>
+		    
 		  <!-- Card -->
 <div class="card col-lg-6 col-md-8 offset-md-2 offset-lg-3">
 
@@ -184,10 +216,7 @@
   </div>
 
 </div>
-<!-- Card -->
-		  
-		  
-
+<!-- Card -->		  
 		  
 		
 		  
@@ -615,7 +644,7 @@
 
     <!--Copyright-->
     <div class="footer-copyright py-3">
-      © <strong>2019</strong> The Milz and Gryllz Show <br> - <br> Website by Florian Bachofner
+      © <strong>2019</strong> The Milz and Gryllz Show <br> - <br> Website by <a href="https://www.facebook.com/flo.bachofner" target="_blank">Florian Bachofner</a>
     </div>
     <!--/.Copyright-->
 
@@ -635,6 +664,34 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
+	  
+	$('.counter').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 8000,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+  
+  
+
+});  
+	  
+	  
 	//  cd Documents/6_Webdesign/09_Dreamweaver/themilzandgryllzshow
 
   </script>
