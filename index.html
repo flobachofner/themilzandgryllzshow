@@ -149,8 +149,10 @@
           <h2 class="display-2 text-center mb-5 mt-3">The Milz and Gryllz Show <small>&#127348;</small></h2>
           <!--Section description-->
           <p class="text-center mb-5">just a couple of average blokes on different sides of the planet having a chat</p>
+			
         </div>
         <!-- Heading & Description -->
+		  
 		  
 		  
 		  
@@ -163,7 +165,7 @@
 
     <!-- Title -->
     <h2 class="card-header-title my-3 display-1">
-	  <div class="counter" data-count="786">700</div>
+	  <div class="counter" data-count="797">700</div>
 	  </h2>
     <!-- Subtitle -->
     <p class="card-header-subtitle mb-3">current downloads</p>
@@ -183,6 +185,35 @@
 <!-- Card -->
 		  
 <div class="col-xs-12" style="height:50px;"></div>
+		  
+		  
+		  
+		  
+		
+
+<!-- Modal -->
+<div class="modal fade" id="bouWamsleyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true" data-show="true">
+  <div class="modal-dialog modal-notify modal-danger" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-white" id="exampleModalLabel"><strong>The Milz and Gryllz Ad</strong></h5>
+      </div>
+      <div class="modal-body">
+        <h5>Sponsored by</h5><h3><strong>Bou Wamsley Roofing Pty Ltd</strong></h3>
+		<img alt="roofing" src="img/roofing.jpg" class="card-img">
+		<p class="pt-3">Bou Wamsley Roofing is the sole reason the show is still on air. Without the weekly generous support, it would be basically impossible to keep up the quality content.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Who cares</button>
+        <a href="https://www.facebook.com/beau.wamsley" class="btn btn-danger" target="_blank">I NEED A ROOF</a>
+      </div>
+    </div>
+  </div>
+</div>
+		  
+		  
+		  
 		    
 		  <!-- Card -->
 <div class="card col-lg-6 col-md-8 offset-md-2 offset-lg-3">
@@ -190,7 +221,7 @@
   <!-- Card image -->
   <div class="view overlay">
     <img class="card-img-top pt-3" src="img/new_logo.jpg" alt="Card image cap">
-    <a href="#!">
+    <a href="#">
       <div class="mask rgba-white-slight"></div>
     </a>
   </div>
@@ -690,6 +721,11 @@
   
 
 });  
+	  
+	  
+	  $(document).ready(function(){
+        $("#bouWamsleyModal").modal('show');
+    });
 	  
 	  
 	//  cd Documents/6_Webdesign/09_Dreamweaver/themilzandgryllzshow
